@@ -39,6 +39,7 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Combinatorics.cs" />
     <Compile Include="SequenceAnalysis.cs" />
     <Compile Include="SequenceGeneration.cs" />
     <Compile Include="SequenceManipulation.cs" />
