@@ -2,7 +2,7 @@
 using System.Resources;
 
 [assembly: AssemblyTitle("LINQ Extensions")]
-[assembly: AssemblyDescription("LINQ extensions")]
+[assembly: AssemblyDescription("LINQ extensions for .NET is a collection of useful extensions methods that extends LINQ's capability.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Tommaso Scalici")]
 [assembly: AssemblyProduct("LINQ Extensions")]

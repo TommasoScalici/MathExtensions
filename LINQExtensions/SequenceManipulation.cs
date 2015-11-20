@@ -9,10 +9,7 @@ namespace TommasoScalici.LINQExtensions
         static Random random = new Random();
 
 
-        public static T RandomOrDefault<T>(this IEnumerable<T> source)
-        {
-            return source.ElementAtOrDefault(random.Next(source.Count()));
-        }
+        public static T RandomOrDefault<T>(this IEnumerable<T> source) => source.ElementAtOrDefault(random.Next(source.Count()));
 
         public static void Shuffle<T>(this IList<T> source)
         {
@@ -32,6 +29,37 @@ namespace TommasoScalici.LINQExtensions
             var sourceList = source.ToList();
             sourceList.Shuffle();
             return sourceList;
+        }
+
+        public static IEnumerable<T> TakeRandom<T>(this IEnumerable<T> source, int count)
+        {
+            var alreadyPickedList = new List<T>();
+
+            for (int i = 0; i < count; i++)
+            {
+                if (i >= source.Count())
+                    break;
+
+                var uniqueRandomElement = source.Except(alreadyPickedList).RandomOrDefault();
+                alreadyPickedList.Add(uniqueRandomElement);
+                yield return uniqueRandomElement;
+            }
+        }
+
+        public static IEnumerable<T> TakeRandomWhile<T>(this IEnumerable<T> source, Func<T, bool> predicate)
+        {
+            var alreadyPickedList = new List<T>();
+
+            for (int i = 0; i < source.Count(); i++)
+            {
+                var uniqueRandomElement = source.Except(alreadyPickedList).RandomOrDefault();
+                alreadyPickedList.Add(uniqueRandomElement);
+
+                if (predicate(uniqueRandomElement))
+                    yield return uniqueRandomElement;
+                else
+                    break;
+            }
         }
     }
 }
