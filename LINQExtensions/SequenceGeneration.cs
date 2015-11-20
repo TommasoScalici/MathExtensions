@@ -18,11 +18,11 @@ namespace TommasoScalici.LINQExtensions
             long prev = -1;
             long next = 1;
 
-            while (prev <= maxValue)
+            while (true)
             {
                 long sum = prev + next;
 
-                if (sum < 0)
+                if (sum < 0 || sum > maxValue)
                     break;
 
                 prev = next;

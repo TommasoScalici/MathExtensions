@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="ArrayExtensions.cs" />
     <Compile Include="Combinatorics.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="SequenceAnalysis.cs" />
     <Compile Include="SequenceGeneration.cs" />
     <Compile Include="SequenceManipulation.cs" />
