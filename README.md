@@ -1,10 +1,9 @@
 # LINQ Extensions
 
 LINQ extensions for .NET is a collection of useful extensions methods that extends LINQ's capability.
-There are methods for combinatorics and sequence analysis, generation and manipulation.
+There are methods for combinatorics and sequence analysis, generation and manipulation.<br /><br />
 
-
-* Combinatorics
+<strong>Combinatorics</strong><br />
 
 Assume we have this string:
 
@@ -12,7 +11,7 @@ Assume we have this string:
 var source = "abc";
 ```
 
-We can use the Combine, PartialPermute and Permute methods to obtain the following results:
+We can use the Combine, PartialPermute and Permute methods to obtain the following results:<br />
 
 - Combine
 
@@ -27,6 +26,7 @@ ab
 ac
 bc
 ```
+<br />
 
 - PartialPermute
 
@@ -43,6 +43,8 @@ ba
 ca
 cb
 ```
+<br />
+
 - Permute
 
 In this example we get permutations of the string "abc" without repetition.
@@ -57,10 +59,9 @@ bac
 cab
 cba
 ```
+<br /><br />
 
-
-
-* Sequence Generation
+<strong>Sequence Generation</strong><br />
 
 - Fibonacci
 
@@ -83,22 +84,22 @@ Output:
 610
 987
 ```
+<br /><br />
 
+<strong>Others IEnumerable<T> extensions</strong><br />
 
-* Others IEnumerable<T> extensions
-
-- RandomOrDefault
+- RandomOrDefault<br />
 
 As you can expect, this method returns a random element from a list or default(T) if the list is empty.
 
-- Shuffle
+- Shuffle<br />
 
 This method returns the same list with elements' order randomized.
 
-- TakeRandom
+- TakeRandom<br />
 
 Works as Take but the elements are taken randomly instead of orderly.
 
-- TakeRandomWhile
+- TakeRandomWhile<br />
 
 Same here, works as TakeWhile but elements are taken randomly instead of orderly.
