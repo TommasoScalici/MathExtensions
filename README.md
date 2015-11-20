@@ -11,7 +11,7 @@ Assume we have this string:
 var source = "abc";
 ```
 
-We can use the Combine, PartialPermute and Permute methods to obtain the following results:<br />
+We can use the Combine, PartialPermute and Permute methods to obtain the following results:<br /><br />
 
 - Combine
 
