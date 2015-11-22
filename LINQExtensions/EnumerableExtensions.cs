@@ -6,7 +6,7 @@ namespace TommasoScalici.LINQExtensions
 {
     public static class EnumerableExtensions
     {
-        static Random random = new Random();
+        static readonly Random random = new Random();
 
 
         public static T RandomOrDefault<T>(this IEnumerable<T> source) => source.ElementAtOrDefault(random.Next(source.Count()));
