@@ -79,7 +79,7 @@ Console.WriteLine(thisIsAmbiguous.FindSequenceKind());
 Output:
 Arithmetic
 Geometric
-ArithmeticOrGeometric
+Indeterminable
 ```
 <br /><br />
 
