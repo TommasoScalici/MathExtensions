@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LINQExtensions\LINQExtensions.csproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>2565eb12-1041-4b9a-ab1c-76a019982e26</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NuProjPath Condition=" '$(NuProjPath)' == '' ">$(MSBuildExtensionsPath)\NuProj\</NuProjPath>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.props" Condition="Exists('$(NuProjPath)\NuProj.props')" />
+  <PropertyGroup Label="Configuration">
+    <Id>TommasoScalici.LINQExtensions</Id>
+    <Version>1.0.0.1</Version>
+    <Title>LINQ Extensions</Title>
+    <Authors>Tommaso Scalici</Authors>
+    <Owners>Tommaso Scalici</Owners>
+    <Summary>LINQ extensions for .NET is a collection of useful extensions methods that extends LINQ's capability.
+There are methods for combinatorics and sequence analysis, generation and manipulation.</Summary>
+    <Description>This package contains some additional extension methods for LINQ regarding combinatorics, sequence analysis, generation and manipulation.
+
+Some of the useful extension methods you can find:
+
+
+* Combinatorics *
+
+- Combine
+- PartialPermute
+- Permute
+
+
+* Sequence Generation *
+
+- Fibonacci
+
+
+* Sequence Manipulation *
+
+- RandomOrDefault
+- Shuffle
+- TakeRandom
+- TakeRandomWhile</Description>
+    <ReleaseNotes>
+    </ReleaseNotes>
+    <ProjectUrl>https://github.com/TommasoScalici/LINQExtensions</ProjectUrl>
+    <LicenseUrl>https://github.com/TommasoScalici/LINQExtensions/blob/master/LICENSE.md</LicenseUrl>
+    <Copyright>Copyright © 2016 Tommaso Scalici</Copyright>
+    <Tags>LINQ Extension Method Extensions Methods Combinatorics Fibonacci Statistics Combine Permute Generation Manipulation Random </Tags>
+    <RequireLicenseAcceptance>true</RequireLicenseAcceptance>
+  </PropertyGroup>
+  <Import Project="$(NuProjPath)\NuProj.targets" />
+</Project>
