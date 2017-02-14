@@ -1,6 +1,6 @@
-# LINQ Extensions
+# Math Extensions
 
-LINQ extensions for .NET is a collection of useful extensions methods that extends LINQ's capability.
+Math extensions for .NET is a library with useful methods doing recurring mathematical, stastical and analysis operations.
 There are methods for combinatorics and sequence analysis, generation and manipulation.<br /><br />
 
 ### Combinatorics<br />
@@ -215,4 +215,4 @@ Same here, works as TakeWhile but elements are taken randomly instead of orderly
 
 ## License
 
-LINQ Extensions is released under [MIT License](https://github.com/TommasoScalici/LINQExtensions/blob/master/LICENSE.md).
+Math Extensions is released under [MIT License](https://github.com/TommasoScalici/LINQExtensions/blob/master/LICENSE.md).

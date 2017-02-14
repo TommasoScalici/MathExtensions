@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TommasoScalici.LINQExtensions
+namespace TommasoScalici.MathExtensions
 {
     /// <summary>
     /// Static class that contains methods for sequence generation.
@@ -16,7 +16,7 @@ namespace TommasoScalici.LINQExtensions
         /// <returns>The arithmetic sequence between the chosen constraints.</returns>
         public static IEnumerable<long> Arithmetic(int k, long minValue = 0, long maxValue = long.MaxValue)
         {
-            for (long i = minValue; i <= maxValue; i += k)
+            for (var i = minValue; i <= maxValue; i += k)
                 yield return i;
         }
 
@@ -33,7 +33,7 @@ namespace TommasoScalici.LINQExtensions
 
             while (true)
             {
-                long sum = prev + next;
+                var sum = prev + next;
 
                 if (sum < 0 || sum > maxValue)
                     break;
@@ -57,7 +57,7 @@ namespace TommasoScalici.LINQExtensions
         /// <returns>The geometric sequence between the chosen constraints.</returns>
         public static IEnumerable<long> Geometric(int k, long minValue = 1, long maxValue = long.MaxValue)
         {
-            for (long i = minValue; i <= maxValue; i *= k)
+            for (var i = minValue; i <= maxValue; i *= k)
                 yield return i;
         }
 
@@ -78,7 +78,7 @@ namespace TommasoScalici.LINQExtensions
             {
                 if (isPrime[i])
                 {
-                    for (long j = i * 2; j <= maxValue; j += i)
+                    for (var j = i * 2; j <= maxValue; j += i)
                         isPrime[j] = false;
                 }
             }
@@ -96,7 +96,7 @@ namespace TommasoScalici.LINQExtensions
         /// <returns>The triangular sequence between the chosen constraints.</returns>
         public static IEnumerable<long> Triangular(long minValue = 0, long maxValue = long.MaxValue)
         {
-            for (int i = 1; i < maxValue; i++)
+            for (var i = 1; i < maxValue; i++)
             {
                 var result = i * (i + 1) / 2;
 

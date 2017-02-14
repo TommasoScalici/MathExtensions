@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace TommasoScalici.LINQExtensions
+namespace TommasoScalici.MathExtensions
 {
     /// <summary>
     /// Static class that contains various extension methods for <seealso cref="IEnumerable{T}"/>.
@@ -47,7 +47,7 @@ namespace TommasoScalici.LINQExtensions
             while (count > 1)
             {
                 var i = random.Next(count--);
-                T temp = source[count];
+                var temp = source[count];
                 source[count] = source[i];
                 source[i] = temp;
             }
@@ -70,7 +70,7 @@ namespace TommasoScalici.LINQExtensions
 
             var alreadyPickedList = new List<T>();
 
-            for (int i = 0; i < count; i++)
+            for (var i = 0; i < count; i++)
             {
                 if (i >= source.Count())
                     break;
@@ -100,7 +100,7 @@ namespace TommasoScalici.LINQExtensions
 
             var alreadyPickedList = new List<T>();
 
-            for (int i = 0; i < source.Count(); i++)
+            for (var i = 0; i < source.Count(); i++)
             {
                 var uniqueRandomElement = source.Except(alreadyPickedList).RandomOrDefault();
                 alreadyPickedList.Add(uniqueRandomElement);

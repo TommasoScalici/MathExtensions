@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace TommasoScalici.LINQExtensions
+namespace TommasoScalici.MathExtensions
 {
     /// <summary>
     /// Define the kind of a mathematical sequence.
@@ -74,7 +74,7 @@ namespace TommasoScalici.LINQExtensions
             var arithmeticDifference = new List<dynamic>();
             var geometricDifference = new List<dynamic>();
 
-            for (int i = 0; i < sourceList.Count - 1; i++)
+            for (var i = 0; i < sourceList.Count - 1; i++)
             {
                 arithmeticDifference.Add((dynamic)sourceList[i + 1] - sourceList[i]);
                 geometricDifference.Add((dynamic)sourceList[i + 1] % sourceList[i]);

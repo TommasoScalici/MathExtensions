@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace TommasoScalici.LINQExtensions
+namespace TommasoScalici.MathExtensions
 {
     /// <summary>
     /// Define if elements are repeated or not in a combinatoric operation.
@@ -14,7 +14,7 @@ namespace TommasoScalici.LINQExtensions
         WithRepetition,
 
         /// <summary>
-        /// Repetetions are excluded.
+        /// Repetitions are excluded.
         /// </summary>
         WithoutRepetition,
     }
