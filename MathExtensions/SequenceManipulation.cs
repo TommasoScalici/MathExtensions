@@ -1,4 +1,4 @@
-﻿//namespace TommasoScalici.LINQExtensions
+﻿//namespace TommasoScalici.MathExtensions
 //{
 //    public static class SequenceManipulation
 //    {
