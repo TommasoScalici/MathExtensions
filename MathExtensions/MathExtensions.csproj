@@ -3,20 +3,20 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.4</TargetFramework>
     <PackageId>TommasoScalici.MathExtensions</PackageId>
-    <Version>1.0.2.2</Version>
+    <Version>1.0.2.3</Version>
     <Authors>Tommaso Scalici</Authors>
     <Company />
     <Description>MathExtensions is a library for .NET that aims to provide useful extensions methods regarding various mathematical domains, like combinatorics, sequence analysis, sequence generation, sequence manipulation, random extractions, etc.</Description>
-    <Copyright>Copyright © 2017 Tommaso Scalici</Copyright>
-    <PackageLicenseUrl>https://github.com/TommasoScalici/MathExtensions/blob/master/LICENSE.md</PackageLicenseUrl>
+    <Copyright>Copyright © 2020 Tommaso Scalici</Copyright>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/TommasoScalici/MathExtensions</PackageProjectUrl>
     <RepositoryUrl>https://github.com/TommasoScalici/MathExtensions</RepositoryUrl>
     <PackageTags>LINQ Math Mathematics Extension Method Extensions Methods Combinatorics Arithmetic Fibonacci Geometric Prime Numbers Statistics Triangular Combine Permute Generation Manipulation Random Sequence</PackageTags>
     <RootNamespace>TommasoScalici.MathExtensions</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <PackageReleaseNotes>Project converted from PCL to .NET Standard 1.4</PackageReleaseNotes>
-    <AssemblyVersion>1.0.2.2</AssemblyVersion>
-    <FileVersion>1.0.2.2</FileVersion>
+    <AssemblyVersion>1.0.2.3</AssemblyVersion>
+    <FileVersion>1.0.2.3</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
